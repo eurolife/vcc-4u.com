@@ -1,0 +1,57 @@
+---
+// Import the necessary components
+import MainLayout from '@/layouts/MainLayout.astro';
+import HeroSection from '@components/sections/landing/HeroSection.astro';
+import HeroSectionAlt from '@components/sections/landing/HeroSectionAlt.astro';
+import ClientsSection from '@components/sections/landing/ClientsSection.astro';
+import FeaturesGeneral from '@components/sections/features/FeaturesGeneral.astro';
+import FeaturesNavs from '@components/sections/features/FeaturesNavs.astro';
+import TestimonialsSection from '@components/sections/testimonials/TestimonialsSection.astro';
+import PricingSection from '@components/sections/pricing/PricingSection.astro';
+import FAQ from '@components/sections/misc/FAQ.astro';
+import AnnouncementBanner from '@components/ui/banners/AnnouncementBanner.astro';
+import heroImage from '@images/hero.png';
+import faqs from '@data/faqs.json';
+import features from '@data/features.json';
+import features2 from '@data/features2.json';
+import pricing from '@data/pricing.json';
+import featureImage from '@images/feature1.png';
+import construction from '@images/construction-image.avif';
+import smallbus from '@images/small-business.png';
+import dashboard from '@images/dashboard-image.avif';
+import tools from '@images/automated-tools.avif';
+import experience from '@images/experience.png';
+---
+
+<MainLayout>
+  <FeaturesNavs
+    title=`<span class="text-yellow-500 dark:text-yellow-400">Paul Hightower</span>, our principal, brings to the table`
+    tabs={[
+      {
+        heading: '15 years of small business ownership experience. ',
+        content: `<ul class='pl-4 list-disc list-outside mt-1 text-pretty text-neutral-700 dark:text-neutral-300'>
+          <li class="mt-2">Bought Instrumentation Technology System (ITS), a privately held C corporation, at a time when it was struggling to earn a profit and had products that were about to be overtaken by newer technology.</li>
+          <li class="mt-2">Pulled it through a hiccup in its marketplace which pushed to company to high debt, low sales and little cash.</li>
+          <li class="mt-2">After twelve years, the company was reinvented, added important strategic supply-chain and engineering partners, new market leading products were developed and delivered to the market, margins grew from 30% to 55% and revenue was doubled.</li>
+          <li class="mt-2">The Company was sold for 10x his investment.</li>
+          </ul>`,
+        svg: 'smallbus',
+        src: smallbus,
+        alt: 'Yellow and black heavy equipment on brown grass field',
+        first: true,
+      },
+      {
+        heading: 'Experience as',
+        content: `<ul class='pl-4 list-disc list-outside mt-1 text-pretty text-neutral-700 dark:text-neutral-300'>
+          <li class="mt-2">CEO (ITS), COO (18 years over 3 companies)</li>
+          <li class="mt-2">Program Manager (6 years)</li>
+          <li class="mt-2">Direct of Engineering (3 companies over 15 years)</li>
+          </ul>`,
+        svg: 'experience',
+        src: experience,
+        alt: 'A screenshot or graphic representation of the intuitive dashboard',
+        second: false,
+      },
+    ]}
+  />
+</MainLayout>

@@ -1,22 +1,37 @@
 [
   {
-    "heading": "Dedicated Teams",
-    "content": "Benefit from our committed teams who ensure your success is personal. Count on expert guidance and exceptional results throughout your project journey.",
-    "svg": "groups"
+    "heading": "",
+    "content": "Create KPIs for key drivers of profit",
+    "svg": "kpi"
   },
   {
-    "heading": "Simplicity and Affordability",
-    "content": "Find easy-to-use, affordable solutions with ScrewFast's line of tools and equipment. Our products make procurement simple and keep projects within budget.",
-    "svg": "verified"
+    "heading": "",
+    "content": "Model each revenue stream to clearly identify contribution margin ",
+    "svg": "growth"
   },
   {
-    "heading": "Comprehensive Documentation",
-    "content": "Integrate with ease using ScrewFast's exhaustive guides and libraries. Achieve seamless product adoption with our full suite of documentation designed for your success.",
+    "heading": "",
+    "content": "Develop working Income Statement, Balance Sheet and Cash Flow statements focused on forecast goals.  These models may be drawn from your existing books.  Forecast statements are derived from easy to understand rules of thumb.",
     "svg": "books"
   },
   {
-    "heading": "User-Centric Design",
-    "content": "Experience the difference with ScrewFast's user-focused design — where functionality meets practicality for an enhanced work experience.",
+    "heading": "",
+    "content": "Mentor Management Teams to result in alignment with company vision and foster productivity and growth of innovation.",
     "svg": "frame"
+  },
+  {
+    "heading": "",
+    "content": "Build strategic plans.",
+    "svg": "buildPuzzle"
+  },
+  {
+    "heading": "",
+    "content": "Create Business Plans leading to better company performance and attract credit and investment resources.",
+    "svg": "plan"
+  },
+  {
+    "heading": "",
+    "content": "Review the Business model with the goal of identifying areas of improvement and processes to achieve such goals.",
+    "svg": "improve"
   }
 ]

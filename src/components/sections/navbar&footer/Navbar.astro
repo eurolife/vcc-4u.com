@@ -25,7 +25,7 @@ const homeUrl = Astro.currentLocale === 'fr' ? '/fr' : '/';
     <div class="flex items-center justify-between">
       <!-- Brand logo -->
       <a
-        class="flex-none rounded-lg text-xl font-bold outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none"
+        class="flex-none rounded-lg text-xl font-bold outline-none ring-zinc-500 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none dark:text-white"
         href={homeUrl}
         aria-label="Brand"
       >
@@ -92,8 +92,13 @@ const homeUrl = Astro.currentLocale === 'fr' ? '/fr' : '/';
           ))
         }
 
-        <Authentication />
-        <LanguagePicker />
+        <!-- <Authentication />
+        <LanguagePicker /> -->
+        <div
+          class="hidden md:block md:my-6 md:border-l md:border-neutral-500 md:pl-2 h-[12px] dark:md:border-neutral-500"
+        >
+        </div>
+
         <!-- ThemeIcon component specifically for larger screens -->
         <span class="hidden md:inline-block">
           <ThemeIcon />

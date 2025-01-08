@@ -1,7 +1,7 @@
-import type { APIRoute, ImageMetadata } from "astro";
-import { getImage } from "astro:assets";
-import icon from "@images/icon.png";
-import maskableIcon from "@images/icon-maskable.png";
+import type { APIRoute, ImageMetadata } from 'astro';
+import { getImage } from 'astro:assets';
+import icon from '@images/icon.png';
+import maskableIcon from '@images/icon-maskable.png';
 
 interface Favicon {
   purpose: 'any' | 'maskable' | 'monochrome';
@@ -20,7 +20,7 @@ const favicons: Favicon[] = [
     purpose: 'maskable',
     src: maskableIcon,
     sizes,
-   },
+  },
 ];
 
 export const GET: APIRoute = async () => {
@@ -31,7 +31,7 @@ export const GET: APIRoute = async () => {
           src: favicon.src,
           width: size,
           height: size,
-          format: "png",
+          format: 'png',
         });
         return {
           src: image.src,
@@ -39,19 +39,19 @@ export const GET: APIRoute = async () => {
           type: `image/${image.options.format}`,
           purpose: favicon.purpose,
         };
-      }),
-    ),
+      })
+    )
   );
 
   const manifest = {
-    short_name: "ScrewFast",
-    name: "ScrewFast",
+    short_name: 'VCC',
+    name: 'Value Creation Consulting',
     icons,
-    display: "minimal-ui",
-    id: "/",
-    start_url: "/",
-    theme_color: "#FFEDD5",
-    background_color: "#262626",
+    display: 'minimal-ui',
+    id: '/',
+    start_url: '/',
+    theme_color: '#eab308',
+    background_color: '#262626',
   };
 
   return new Response(JSON.stringify(manifest));
