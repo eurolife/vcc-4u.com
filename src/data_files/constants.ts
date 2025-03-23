@@ -4,10 +4,11 @@ export const SITE = {
   title: 'Value Creation Consulting',
   tagline: 'Managing by the numbers',
   description:
-    'VCC offers project management consulting services, including working with owners and management to create KPIs for key drivers of profit, mentoring management teams, building strategic business plans, and reviewing and improving the business model.',
-  description_short: 'VCC offers project management consulting services',
-  url: 'https://screwfast.uk',
-  author: 'Emil Gulamov',
+    'Helping small business owners transform their business from a job into a wealth-building asset.  VCC offers Executive coaching, excel financial modeling for small business, P&L forecast models, due diligence assistance. Assistance with market messaging, program management and systems engineering.  VCC is lead by former small business owner, and corporate background from electronics engineer to business unit manager to Executive VP and President.',
+  description_short:
+    'Helping small business owners transform their business from a job into a wealth-building asset.',
+  url: 'https://vcc-4u.com',
+  author: 'Paul Hightower',
 };
 
 export const SEO = {
@@ -34,8 +35,8 @@ export const OG = {
   locale: 'en_US',
   type: 'website',
   url: SITE.url,
-  title: `${SITE.title}: : Project Management Consulting Services`,
+  title: `${SITE.title}: Transforming Your Business into a Profitable Asset`,
   description:
-    'VCC offers project management consulting services, including working with owners and management to create KPIs for key drivers of profit, mentoring management teams, building strategic business plans, and reviewing and improving the business model.',
+    'Helping small business owners transform their business from a job into a wealth-building asset.  VCC offers Executive coaching, excel financial modeling for small business, P&L forecast models, due diligence assistance. Assistance with market messaging, program management and systems engineering.  VCC is lead by former small business owner, and corporate background from electronics engineer to business unit manager to Executive VP and President.',
   image: ogImageSrc,
 };

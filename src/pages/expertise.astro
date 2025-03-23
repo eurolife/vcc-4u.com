@@ -17,23 +17,28 @@ import features2 from '@data/features2.json';
 import pricing from '@data/pricing.json';
 import featureImage from '@images/feature1.png';
 import construction from '@images/construction-image.avif';
-import smallbus from '@images/small-business.png';
+import smallbus from '@images/handshake.png';
 import dashboard from '@images/dashboard-image.avif';
 import tools from '@images/automated-tools.avif';
 import experience from '@images/experience.png';
 ---
 
 <MainLayout>
+  <h1
+    class="pt-10 lg:pt-14 text-center text-2xl font-bold leading-tight text-neutral-800 dark:text-neutral-200 md:text-4xl"
+  >
+    Expertise
+  </h1>
   <FeaturesNavs
-    title=`<span class="text-yellow-500 dark:text-yellow-400">Paul Hightower</span>, our principal, brings to the table`
+    title=`<span class="text-blue-400 dark:text-blue-400">Paul Hightower</span>, our principal, brings to the table`
     tabs={[
       {
         heading: '15 years of small business ownership experience. ',
         content: `<ul class='pl-4 list-disc list-outside mt-1 text-pretty text-neutral-700 dark:text-neutral-300'>
           <li class="mt-2">Bought Instrumentation Technology System (ITS), a privately held C corporation, at a time when it was struggling to earn a profit and had products that were about to be overtaken by newer technology.</li>
-          <li class="mt-2">Pulled it through a hiccup in its marketplace which pushed to company to high debt, low sales and little cash.</li>
+          <li class="mt-2">Pulled ITS through a hiccup in its marketplace which pushed to company to high debt, low sales and little cash.</li>
           <li class="mt-2">After twelve years, the company was reinvented, added important strategic supply-chain and engineering partners, new market leading products were developed and delivered to the market, margins grew from 30% to 55% and revenue was doubled.</li>
-          <li class="mt-2">The Company was sold for 10x his investment.</li>
+          <li class="mt-2">The company was sold for 10x stakeholders investments.</li>
           </ul>`,
         svg: 'smallbus',
         src: smallbus,

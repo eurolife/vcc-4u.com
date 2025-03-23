@@ -1,0 +1,74 @@
+---
+// Import the necessary components
+import ClientsSection from '@/components/sections/landing/ClientsSection.astro';
+import ContactSectionSimple from '@/components/sections/misc/ContactSectionSimple.astro';
+import MainLayout from '@/layouts/MainLayout.astro';
+import ContactSection from '@components/sections/misc/ContactSection.astro';
+import { SITE } from '@data/constants';
+import ritecLogo from '@images/ritec-logo.svg';
+import hascLogo from '@images/hasc-logo.svg';
+import timaLogo from '@images/tima-logo.jpg';
+
+const pageTitle: string = `Contact | ${SITE.title}`;
+
+const clients = [
+  {
+    name: 'TIMA Power Systems',
+    logo: timaLogo,
+    logoType: 'jpg',
+    description:
+      'I worked as interim president at TIMA Power Systems from 1999 to 2001. They are an enterprise level uninterruptable power supply sales and service company. I brought in Toshiba and Mitsubishi UPS products to provide more flexibility in offerings to improve competitiveness. This set the company up to flourish during the emergence of the DotCom boom. I restructured service contracts and systematically improved margins from 38% to 48% over two years without losing a single service customer.',
+  },
+  {
+    name: 'ISC Electronic Systems',
+    logo: '',
+    logoType: '',
+    description:
+      'From 2002-2006 I consulted for ISC Electronic Systems as Fire Alarm sales and service company. I helped them organize their quoting system, designed methodologies to efficiently layout fire alarm systems for commercial high rise buildings, and designed collateral material to help them develop new clients.',
+  },
+  {
+    name: 'Hospital Association of Southern California',
+    logo: hascLogo,
+    logoType: 'svg',
+    description:
+      'I consulted with the Hospital Association of Southern California from 2005 to 2006, developing an upgrade specification for their emergency communications network.',
+  },
+
+  {
+    name: 'RITEC',
+    logo: ritecLogo,
+    logoType: 'svg',
+    description:
+      'I served as the Executive Vice President of Engineering.  I rebuilt a dysfunctional engineering organization and added key talent.  Created best practices for product development, design reviews, experimental change records and documentation of hardware, firmware and software (GitHub) during the development process.    Led the development of a digital license plate printer for 3M that produces full color plates at up to 1 every 1.25 seconds.',
+  },
+];
+---
+
+<!--Utilizing MainLayout for the outer layout of the page, and defining meta for SEO purposes-->
+<MainLayout
+  title={pageTitle}
+  structuredData={{
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': 'https://screwfast.uk/contact',
+    url: 'https://screwfast.uk/contact',
+    name: 'Contact Us | ScrewFast',
+    description:
+      "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.",
+    isPartOf: {
+      '@type': 'WebSite',
+      url: 'https://screwfast.uk',
+      name: 'ScrewFast',
+      description:
+        'ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.',
+    },
+    inLanguage: 'en-US',
+  }}
+>
+  <h1
+    class="pt-10 lg:pt-14 text-center text-2xl font-bold leading-tight text-neutral-800 dark:text-neutral-200 md:text-4xl"
+  >
+    Clients
+  </h1>
+  <ClientsSection title="" clients={clients} />
+</MainLayout>

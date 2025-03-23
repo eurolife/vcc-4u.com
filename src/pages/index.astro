@@ -3,10 +3,15 @@
 import MainLayout from '@/layouts/MainLayout.astro';
 import HeroSection from '@components/sections/landing/HeroSection.astro';
 import FeaturesGeneral from '@components/sections/features/FeaturesGeneral.astro';
-import heroImage from '@images/hero.png';
+import heroImage from '@images/puzzlepieces.png';
 import features from '@data/features.json';
 import features2 from '@data/features2.json';
-import featureImage from '@images/feature1.png';
+import features3 from '@data/features3.json';
+import featureImage1 from '@images/tech.png';
+import featureImage2 from '@images/busmgmt.jpg';
+import featureImage3 from '@images/experience.jpg';
+import FeaturesStatsAlt from '@/components/sections/features/FeaturesStatsAlt.astro';
+import HeroSectionAlt from '@/components/sections/landing/HeroSectionAlt.astro';
 
 const avatarSrcs: Array<string> = [
   'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80',
@@ -18,9 +23,8 @@ const avatarSrcs: Array<string> = [
 
 <MainLayout>
   <HeroSection
-    title=`Managing by the <span
-        class="text-yellow-500 dark:text-yellow-400">numbers</span>`
-    subTitle="We offer expert project management services."
+    title="From Passion to Wealth: Transform Your Business into a Profitable Asset!"
+    subTitle="Helping small business owners transform their business from a job into a wealth-building asset"
     primaryBtn="Our Expertise"
     primaryBtnURL="/expertise"
     secondaryBtn="Contact VCC"
@@ -35,16 +39,43 @@ const avatarSrcs: Array<string> = [
   />
 
   <FeaturesGeneral
-    title="VCC works with owners and management to:"
+    title="Business & Financial Strategy"
     subTitle=""
     features={features}
+    src={featureImage2}
+    alt="Graph and chart analysis"
   />
   <hr class="border-t border-dotted border-neutral-500" />
   <FeaturesGeneral
-    title="VCC can supplement your technical team"
+    title="Technical & Engineering Support"
     subTitle=""
-    src={featureImage}
-    alt="Project management graphic"
+    src={featureImage1}
+    alt="Business Management"
     features={features2}
+  />
+  <hr class="border-t border-dotted border-neutral-500" />
+  <FeaturesGeneral
+    title="Why Work with VCC?"
+    subTitle=""
+    src={featureImage3}
+    alt="Business Management"
+    features={features3}
+  />
+  <FeaturesStatsAlt
+    title="Take the Next Step Toward Business Success"
+    subTitle="VCC is here to help you"
+    benefits={[
+      'scale',
+      'secure funding,',
+      'optimize profitability, and',
+      'maximize exit value.',
+    ]}
+  />
+
+  <HeroSectionAlt
+    title="Let’s talk about how we can help your business thrive."
+    subTitle=""
+    btnTitle="Contact Us Today"
+    url="contact"
   />
 </MainLayout>

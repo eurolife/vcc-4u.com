@@ -1,37 +1,22 @@
 [
   {
-    "heading": "",
-    "content": "Create KPIs for key drivers of profit",
-    "svg": "kpi"
-  },
-  {
-    "heading": "",
-    "content": "Model each revenue stream to clearly identify contribution margin ",
+    "heading": "Revenue & Margin Analysis",
+    "content": "Identify high-profit revenue streams and eliminate weak ones for sustained profitability.",
     "svg": "growth"
   },
   {
-    "heading": "",
-    "content": "Develop working Income Statement, Balance Sheet and Cash Flow statements focused on forecast goals.  These models may be drawn from your existing books.  Forecast statements are derived from easy to understand rules of thumb.",
-    "svg": "books"
-  },
-  {
-    "heading": "",
-    "content": "Mentor Management Teams to result in alignment with company vision and foster productivity and growth of innovation.",
-    "svg": "frame"
-  },
-  {
-    "heading": "",
-    "content": "Build strategic plans.",
-    "svg": "buildPuzzle"
-  },
-  {
-    "heading": "",
-    "content": "Create Business Plans leading to better company performance and attract credit and investment resources.",
+    "heading": "Financial Modeling & Forecasting",
+    "content": "Develop income statements, balance sheets, and cash flow projections to support investor pitches, secure credit, and facilitate acquisitions.",
     "svg": "plan"
   },
   {
-    "heading": "",
-    "content": "Review the Business model with the goal of identifying areas of improvement and processes to achieve such goals.",
-    "svg": "improve"
+    "heading": "Preparing Your Business for Sale",
+    "content": "Position your company to attract buyers and optimize valuation.",
+    "svg": "sale"
+  },
+  {
+    "heading": "Due Diligence for Acquisitions",
+    "content": "Ensure smart investments with thorough business evaluations.",
+    "svg": "valuation"
   }
 ]

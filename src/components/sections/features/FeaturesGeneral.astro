@@ -42,6 +42,20 @@ const { title, subTitle, src, alt, features } = Astro.props;
           </p>
         )
       }
+      <div class="hidden lg:block lg:mt-8">
+        {
+          src && alt && (
+            <Image
+              src={src}
+              alt={alt}
+              class="object-cover object-center rounded-lg"
+              draggable={'false'}
+              format={'png'}
+              loading={'eager'}
+            />
+          )
+        }
+      </div>
     </div>
 
     <!-- Block to display the IconBlock components -->
@@ -61,13 +75,15 @@ const { title, subTitle, src, alt, features } = Astro.props;
   </div>
 
   <!-- Block to display the feature image -->
-  <div class="relative mb-6 overflow-hidden md:mb-8 flex justify-center">
+  <div
+    class="lg:hidden mt-8 lg:mt-0 relative mb-6 overflow-hidden md:mb-8 flex justify-center"
+  >
     {
       src && alt && (
         <Image
           src={src}
           alt={alt}
-          class="object-cover object-center"
+          class="object-cover object-center rounded-lg"
           draggable={'false'}
           format={'png'}
           loading={'eager'}

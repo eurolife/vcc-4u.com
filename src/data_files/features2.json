@@ -1,17 +1,17 @@
 [
   {
-    "heading": "Systems Engineering",
-    "content": "<ul class='list-disc list-inside mt-1 text-pretty text-neutral-700 dark:text-neutral-300'><li>Interface Specifications</li><li>HW and SW block diagrams</li><li>Control algorithms</li></ul>",
+    "heading": "Systems Engineering Expertise",
+    "content": "Develop interface specifications, HW/SW architectures, and control algorithms to optimize product design.",
     "svg": "engineer"
   },
   {
-    "heading": "Development Risk Analysis",
-    "content": "",
-    "svg": "analysis"
+    "heading": "Design for Manufacturing",
+    "content": "Improve efficiency and profitability by designing products for scalability and cost-effectiveness.",
+    "svg": "manufacturing"
   },
   {
-    "heading": "Design for Manufacturing",
-    "content": "",
-    "svg": "manufacturing"
+    "heading": "Development Risk Analysis",
+    "content": "Reduce costly development risks before they happen.",
+    "svg": "analysis"
   }
 ]

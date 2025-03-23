@@ -7,6 +7,17 @@ export default {
   ],
   darkMode: 'class',
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
+    fontFamily: {
+      body: ['Aptos'],
+      logo: ['AptosDisplay'],
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -39,6 +50,15 @@ export default {
       }, // Primary colors, used mainly for links, buttons and svg icons
       red: colors.red, // Used for bookmark icon
       zinc: colors.zinc, // Used mainly for box-shadow
+      blue: {
+        200: '#88bef3',
+        300: '#5fa7e1',
+        400: '#408dcb',
+      },
+      grey: {
+        400: '#6a7370',
+        500: '#4b5652',
+      },
     },
     extend: {},
   },
