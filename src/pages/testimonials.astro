@@ -4,7 +4,7 @@ import MainLayout from '@/layouts/MainLayout.astro';
 import { SITE } from '@data/constants';
 import TestimonialsSectionAlt from '@components/sections/testimonials/TestimonialsSectionAlt.astro';
 
-const pageTitle: string = `Contact | ${SITE.title}`;
+const pageTitle: string = `Testimonials | ${SITE.title}`;
 
 // Testimonial data that will be rendered in the component
 const testimonials = [
@@ -74,17 +74,16 @@ const testimonials = [
   structuredData={{
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    '@id': 'https://screwfast.uk/contact',
-    url: 'https://screwfast.uk/contact',
-    name: 'Contact Us | ScrewFast',
-    description:
-      "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.",
+    '@id': 'https://vcc-4u.com/testimonials',
+    url: 'https://vcc-4u.com/testimonials',
+    name: 'Testimonials | Value Creation Consulting',
+    description: 'What our clients are saying.',
     isPartOf: {
       '@type': 'WebSite',
-      url: 'https://screwfast.uk',
-      name: 'ScrewFast',
+      url: 'https://vcc-4u.com',
+      name: 'Value Creation Consulting',
       description:
-        'ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.',
+        'Value Creation Consulting helps small business owners transform their business from a job into a wealth-building asset.',
     },
     inLanguage: 'en-US',
   }}

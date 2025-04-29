@@ -1,29 +1,34 @@
 ---
 // Import the necessary components
 import MainLayout from '@/layouts/MainLayout.astro';
-import HeroSection from '@components/sections/landing/HeroSection.astro';
-import HeroSectionAlt from '@components/sections/landing/HeroSectionAlt.astro';
-import ClientsSection from '@components/sections/landing/ClientsSection.astro';
-import FeaturesGeneral from '@components/sections/features/FeaturesGeneral.astro';
 import FeaturesNavs from '@components/sections/features/FeaturesNavs.astro';
-import TestimonialsSection from '@components/sections/testimonials/TestimonialsSection.astro';
-import PricingSection from '@components/sections/pricing/PricingSection.astro';
-import FAQ from '@components/sections/misc/FAQ.astro';
-import AnnouncementBanner from '@components/ui/banners/AnnouncementBanner.astro';
-import heroImage from '@images/hero.png';
-import faqs from '@data/faqs.json';
-import features from '@data/features.json';
-import features2 from '@data/features2.json';
-import pricing from '@data/pricing.json';
-import featureImage from '@images/feature1.png';
-import construction from '@images/construction-image.avif';
 import smallbus from '@images/handshake.png';
-import dashboard from '@images/dashboard-image.avif';
-import tools from '@images/automated-tools.avif';
 import experience from '@images/experience.png';
+import { SITE } from '@data/constants';
+
+const pageTitle: string = `Expertise | ${SITE.title}`;
 ---
 
-<MainLayout>
+<MainLayout
+  title={pageTitle}
+  structuredData={{
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': 'https://vcc-4u.com/expertise',
+    url: 'https://vcc-4u.com/expertise',
+    name: 'Expertise | Value Creation Consulting',
+    description:
+      'Paul Hightower, our principal, brings to the table many years of experience and expertise.',
+    isPartOf: {
+      '@type': 'WebSite',
+      url: 'https://vcc-4u.com',
+      name: 'Value Creation Consulting',
+      description:
+        'Value Creation Consulting helps small business owners transform their business from a job into a wealth-building asset.',
+    },
+    inLanguage: 'en-US',
+  }}
+>
   <h1
     class="pt-10 lg:pt-14 text-center text-2xl font-bold leading-tight text-neutral-800 dark:text-neutral-200 md:text-4xl"
   >

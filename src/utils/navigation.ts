@@ -13,6 +13,7 @@ const footerLinks = [
     links: [
       { name: 'Expertise', url: '/expertise' },
       { name: 'Clients', url: '/clients' },
+      { name: 'Testimonials', url: '/testimonials' },
       { name: 'Contact VCC', url: '/contact' },
     ],
   },
