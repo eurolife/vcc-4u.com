@@ -1,17 +1,17 @@
 [
   {
-    "heading": "Proven Small Business Leadership",
-    "content": "Led multiple companies through financial turnarounds, growth phases, and successful exits.",
-    "svg": "smallbus"
-  },
-  {
-    "heading": "Successful Owner Experience",
-    "content": "P. Hightower, Principal, grew & sold a struggling tech company for a 10x return after transforming operations, product lines, and margins.",
-    "svg": "improve"
-  },
-  {
-    "heading": "Expertise in Business & Engineering",
-    "content": "35+ years of experience in CEO, COO, program management, and engineering leadership roles across multiple industries.",
+    "heading": "Lead with Clarity and Structure",
+    "content": "Align leadership around a clear strategic plan and operating rhythm.",
     "svg": "leader"
+  },
+  {
+    "heading": "Let Data Drive Decisions",
+    "content": "<span class='text-black italic'>Manage by the numbers</span>&nbsp; with a focused business plan and KPI dashboard.",
+    "svg": "data"
+  },
+  {
+    "heading": "Turn Simplicity into Financial Strength",
+    "content": "Use a simple, transparent business model to drive margins, profit, and cash-flow discipline.",
+    "svg": "model"
   }
 ]

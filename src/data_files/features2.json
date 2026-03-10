@@ -1,17 +1,27 @@
 [
   {
-    "heading": "Systems Engineering Expertise",
-    "content": "Develop interface specifications, HW/SW architectures, and control algorithms to optimize product design.",
-    "svg": "engineer"
+    "heading": "Target the Right Deal from the Start",
+    "content": "Define your ideal acquisition so you only chase deals that truly fit your goals.",
+    "svg": "valuation"
   },
   {
-    "heading": "Design for Manufacturing",
-    "content": "Improve efficiency and profitability by designing products for scalability and cost-effectiveness.",
-    "svg": "manufacturing"
-  },
-  {
-    "heading": "Development Risk Analysis",
-    "content": "Reduce costly development risks before they happen.",
+    "heading": "Verify Strength with Real Numbers",
+    "content": "Separate great stories from great businesses with disciplined financial and competitive analysis.",
     "svg": "analysis"
+  },
+  {
+    "heading": "See the Full Investment Required",
+    "content": "Know the real capital required to buy, fix, and grow the target before you sign.",
+    "svg": "investment"
+  },
+  {
+    "heading": "Structure Terms That Safeguard You",
+    "content": "Structure term sheets and purchase agreements that protect you, not just the deal.",
+    "svg": "safeguard"
+  },
+  {
+    "heading": "Forecast Before You Invest",
+    "content": "Build forward-looking revenue and cash-flow models so you see the movie, not just the snapshot.",
+    "svg": "forecast"
   }
 ]

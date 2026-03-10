@@ -3,13 +3,15 @@
 import MainLayout from '@/layouts/MainLayout.astro';
 import HeroSection from '@components/sections/landing/HeroSection.astro';
 import FeaturesGeneral from '@components/sections/features/FeaturesGeneral.astro';
-import heroImage from '@images/puzzlepieces.png';
+import heroImage from '@images/homebanner.jpg';
 import features from '@data/features.json';
 import features2 from '@data/features2.json';
 import features3 from '@data/features3.json';
-import featureImage1 from '@images/tech.png';
-import featureImage2 from '@images/busmgmt.jpg';
-import featureImage3 from '@images/experience.jpg';
+import features4 from '@data/features4.json';
+import featureImage1 from '@images/selling.jpg';
+import featureImage2 from '@images/buying.jpg';
+import featureImage3 from '@images/mentor.jpg';
+import featureImage4 from '@images/experience.jpg';
 import FeaturesStatsAlt from '@/components/sections/features/FeaturesStatsAlt.astro';
 import HeroSectionAlt from '@/components/sections/landing/HeroSectionAlt.astro';
 
@@ -23,8 +25,8 @@ const avatarSrcs: Array<string> = [
 
 <MainLayout>
   <HeroSection
-    title="From Passion to Wealth: Transform Your Business into a Wealth Asset! Update"
-    subTitle="Helping small business owners transform their business from a job into a wealth-building asset"
+    title="Grow. Scale. Exit."
+    subTitle="Helping Small Business Owners Exit or Grow by Acquisition or Organically"
     primaryBtn="Our Expertise"
     primaryBtnURL="/expertise"
     secondaryBtn="Contact VCC"
@@ -39,27 +41,35 @@ const avatarSrcs: Array<string> = [
   />
 
   <FeaturesGeneral
-    title="Business & Financial Strategy"
-    subTitle=""
+    title="Selling"
+    subTitle="Turning your business into a strategic, de-risked asset buyers compete for."
     features={features}
-    src={featureImage2}
-    alt="Graph and chart analysis"
+    src={featureImage1}
+    alt="Selling"
   />
   <hr class="border-t border-dotted border-neutral-500" />
   <FeaturesGeneral
-    title="Technical & Engineering Support"
-    subTitle=""
-    src={featureImage1}
-    alt="Business Management"
+    title="Buying"
+    subTitle="A quality purchase takes selecting the right business."
+    src={featureImage2}
+    alt="Buying"
     features={features2}
+  />
+  <hr class="border-t border-dotted border-neutral-500" />
+  <FeaturesGeneral
+    title="Mentor Management"
+    subTitle="Foster productivity, engagement, empowerment, and growth."
+    src={featureImage3}
+    alt="Mentor Management"
+    features={features3}
   />
   <hr class="border-t border-dotted border-neutral-500" />
   <FeaturesGeneral
     title="Why Work with VCC?"
     subTitle=""
-    src={featureImage3}
+    src={featureImage4}
     alt="Business Management"
-    features={features3}
+    features={features4}
   />
   <FeaturesStatsAlt
     title="Take the Next Step Toward Business Success"

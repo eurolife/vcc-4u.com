@@ -48,7 +48,7 @@ interface Props {
   <div>
     <!-- Each h1 and p tag renders a portion of the title and subTitle defined above -->
     <h1
-      class="block text-balance text-lg font-logo tracking-tight text-neutral-800 dark:text-neutral-200 sm:text-3xl lg:text-4xl lg:leading-tight text-center md:text-left"
+      class="block text-balance text-lg font-logo tracking-tight text-neutral-800 dark:text-neutral-200 sm:text-3xl lg:text-5xl lg:leading-tight text-center md:text-left"
     >
       <!-- About Fragment: https://docs.astro.build/en/basics/astro-syntax/#fragments -->
       <Fragment set:html={title} />
@@ -60,6 +60,9 @@ interface Props {
         </p>
       )
     }
+    <!-- <p class="mt-3 text-pretty text-center md:text-left md:text-lg leading-relaxed text-neutral-500 dark:text-neutral-400 lg:w-4/5">
+          
+        </p> -->
     <!-- Action Button Section: This section includes two CTAs with their own styles and URL -->
     <div class="mt-7 grid w-full gap-3 sm:inline-flex">
       {primaryBtn && <PrimaryCTA title={primaryBtn} url={primaryBtnURL} />}
