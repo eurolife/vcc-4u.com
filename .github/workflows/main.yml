@@ -2,7 +2,7 @@ name: Build + Deploy (FTP)
 
 on:
   push:
-    branches: ['main']
+    branches: ['main', 'updates']
 
 concurrency:
   group: deploy-vcc-website
