@@ -2,7 +2,7 @@ import ogImageSrc from '@images/social.png';
 
 export const SITE = {
   title: 'Value Creation Consulting',
-  tagline: 'Managing by the numbers',
+  tagline: 'Manage by the numbers',
   description:
     'Helping small business owners transform their business from a job into a wealth-building asset.  VCC offers Executive coaching, excel financial modeling for small business, P&L forecast models, due diligence assistance. Assistance with market messaging, program management and systems engineering.  VCC is lead by former small business owner, and corporate background from electronics engineer to business unit manager to Executive VP and President.',
   description_short:

@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import heroImage from '@images/homebanner.jpg';
+---
+
+<section
+  class="relative mx-auto max-w-[85rem] py-14 md:items-center 2xl:max-w-full"
+>
+  <div class="flex w-full">
+    <div class="top-12 overflow-hidden">
+      <Image
+        src={heroImage}
+        alt="home"
+        class="h-full w-full object-cover object-center rounded-2xl"
+        draggable={'false'}
+        loading={'eager'}
+        format={'avif'}
+      />
+    </div>
+  </div>
+</section>
