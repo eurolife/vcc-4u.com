@@ -3,6 +3,13 @@
 import MainLayout from '@/layouts/MainLayout.astro';
 import { SITE } from '@data/constants';
 import TestimonialsSectionAlt from '@components/sections/testimonials/TestimonialsSectionAlt.astro';
+import ScottJacobs from '@images/scottjacobs.jpg';
+import ColinStanley from '@images/colinstanley.jpg';
+import KevinDibben from '@images/kevindibben.jpg';
+import HaydenClaisse from '@images/haydenclaisse.jpg';
+import Janet from '@images/janet.jpg';
+import JimmyDelshad from '@images/jimmydelshad.jpg';
+import RomeoElias from '@images/romeoelias.jpg';
 
 const pageTitle: string = `Testimonials | ${SITE.title}`;
 
@@ -14,9 +21,8 @@ const testimonials = [
       ' "I have worked with Paul for several years. He is a very knowledgeable professional in all facets of business. He is particularly successful at setting up accounting and financial systems, setting financial goals, and overseeing ongoing financial performance. Paul\'s engineering skills and background are reflected in his technical expertise and in his systematic and thoughtful approach to business issues. I am happy to recommend Paul." ',
     author: 'Scott Jacobs',
     role: 'ISC Electronic Systems',
-    avatarSrc:
-      'https://media.licdn.com/dms/image/v2/C4E03AQGRqglORGY4Sg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1517695784052?e=1748476800&v=beta&t=ywm9VJr2SujMgITnEmG0rJNMW0A8fUs4I2yfOPnN-zo',
-    avatarAlt: 'Image Description',
+    avatarSrc: ScottJacobs.src,
+    avatarAlt: 'Scott Jacobs',
   },
   // Second testimonial data
   {
@@ -24,9 +30,8 @@ const testimonials = [
       ' "A pleasure to work with, a true professional. With a solid engineering background and his management skills, we had an excellent working relationship, with good communications, and very satisfying results." ',
     author: 'Colin Stanley',
     role: 'CEO at Two Point Seven Inc',
-    avatarSrc:
-      'https://media.licdn.com/dms/image/v2/C4E03AQEiu1oTcMjRuw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516165587859?e=1748476800&v=beta&t=BYE5vsoIHLz7xvnRXgeK58g-E1Cq4GV-bbB-4eEFM_Q',
-    avatarAlt: 'Image Description',
+    avatarSrc: ColinStanley.src,
+    avatarAlt: 'Colin Stanley',
   },
   // Third testimonial data
   {
@@ -34,27 +39,24 @@ const testimonials = [
       ' "I hired Paul as a business consultant to advise me on a start up real estate and development company. His insight and advice is incredible. Paul has the ability to see the big picture and to cut straight to the heart of every issue. I would recommend Paul without any reservation." ',
     author: 'Kevin Dibben',
     role: 'Real Estate Broker, Realtor, On',
-    avatarSrc:
-      'https://media.licdn.com/dms/image/v2/C5603AQGgE7U-TXSg7w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1517681787003?e=1748476800&v=beta&t=rEV8AIcW02lQ1MJkQ4i07WGcosgUL_zGth0vX38yQXw',
-    avatarAlt: 'Image Description',
+    avatarSrc: KevinDibben.src,
+    avatarAlt: 'Kevin Dibben',
   },
   {
     content:
       ' "Paul and I were members of the same CEO Roundtable. Paul has a very broad knowledge of business and a strong entrepreneurial spirit. He was able to engage roundtable members on their issues effectively. He has done the same with a wide variety of clients as a consultant. He clearly can analyze business situations as to the source of their profits, their leverage points, and identify ways to improve profitablility quickly." ',
     author: 'Hayden Claisse',
     role: 'FACILITATOR at XLN (Executive Leadership Network)',
-    avatarSrc:
-      'https://media.licdn.com/dms/image/v2/C4D03AQEj9QiCdHUOsQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516244344869?e=1748476800&v=beta&t=fbfSMdoQHX3bNoDH3QtdTVR8vnqUdzjrcmGSCf-JTH8',
-    avatarAlt: 'Image Description',
+    avatarSrc: HaydenClaisse.src,
+    avatarAlt: 'Hayden Claisse',
   },
   {
     content:
       ' "Paul has outstanding strategic insight. His ability to help an organization identify challenges and offer solutions that will increase profitability have been helpful to many organizations he has worked with, including mine." ',
     author: 'Janet McCracken Beard',
     role: 'CEO  The Employers Edge',
-    avatarSrc:
-      'https://media.licdn.com/dms/image/v2/C5603AQHAHRnLYrqOnw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1591042748169?e=1748476800&v=beta&t=G0Xwvc8DizS8bEy_3evkZKzHDvMuMno7HtBxTe7390Y',
-    avatarAlt: 'Image Description',
+    avatarSrc: Janet.src,
+    avatarAlt: 'Janet McCracken Beard',
   },
 
   {
@@ -62,18 +64,16 @@ const testimonials = [
       ' "Paul worked for me at Ai and did a great job. He is very trustworthy and dependable." ',
     author: 'Jimmy Delshad',
     role: 'President @ AI Business Technologies and Two-Time Mayor of Beverly Hills | Global Ambassador of Cedars Sinai',
-    avatarSrc:
-      'https://media.licdn.com/dms/image/v2/D5603AQGDi1ojmc4t2w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1663894293980?e=1748476800&v=beta&t=SmNAnsJMEm-oJvC_zFHxqG-s4ECz6vyAfc2X53b9fBs',
-    avatarAlt: 'Image Description',
+    avatarSrc: JimmyDelshad.src,
+    avatarAlt: 'Jimmy Delshad',
   },
   {
     content:
       ' "I had the pleasure to engage Paul to help me with a business acquisition. His attention to details, rapid focus on the salient issues, and deep analysis of the company’s data and kpis were instrumental in helping me expedite and complete due diligence and close on the loan. I found Paul to be very helpful by my side, experienced, business savvy and a versatile advisor helping me evaluate and think through all aspects of this new business. I highly recommend him." ',
     author: 'Romeo Elias',
-    role: '',
-    avatarSrc:
-      'https://media.licdn.com/dms/image/v2/D5603AQGDi1ojmc4t2w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1663894293980?e=1748476800&v=beta&t=SmNAnsJMEm-oJvC_zFHxqG-s4ECz6vyAfc2X53b9fBs',
-    avatarAlt: 'Image Description',
+    role: 'Founder of Intellect',
+    avatarSrc: RomeoElias.src,
+    avatarAlt: 'Romeo Elias',
   },
 ];
 ---
