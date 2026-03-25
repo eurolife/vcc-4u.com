@@ -3,6 +3,7 @@ const navBarLinks = [
   { name: 'Home', url: '/' },
   { name: 'Expertise', url: '/expertise' },
   { name: 'Clients', url: '/clients' },
+  { name: 'Projects', url: '/projects' },
   { name: 'Testimonials', url: '/testimonials' },
   { name: 'Contact VCC', url: '/contact' },
 ];
@@ -13,6 +14,7 @@ const footerLinks = [
     links: [
       { name: 'Expertise', url: '/expertise' },
       { name: 'Clients', url: '/clients' },
+      { name: 'Projects', url: '/projects' },
       { name: 'Testimonials', url: '/testimonials' },
       { name: 'Contact VCC', url: '/contact' },
     ],

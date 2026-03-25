@@ -1,0 +1,94 @@
+---
+// Import the necessary components
+
+import MainLayout from '@/layouts/MainLayout.astro';
+import { SITE } from '@data/constants';
+import sampleImg from '@/images/bulbs.jpg';
+import saas from '@/images/saas.jpg';
+import revGrowth from '@/images/revgrowth.jpg';
+import charts from '@/images/charts.jpg';
+import acquisition from '@/images/acquisition.jpg';
+import RightSection from '@/components/ui/blocks/RightSection.astro';
+import LeftSection from '@/components/ui/blocks/LeftSection.astro';
+
+const pageTitle: string = `Projects | ${SITE.title}`;
+---
+
+<!--Utilizing MainLayout for the outer layout of the page, and defining meta for SEO purposes-->
+<MainLayout
+  title={pageTitle}
+  structuredData={{
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': 'https://vcc-4u.com/contact',
+    url: 'https://vcc-4u.com/contact',
+    name: 'Projects | Value Creation Consulting',
+    description:
+      "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution for your business.",
+    isPartOf: {
+      '@type': 'WebSite',
+      url: 'https://vcc-4u.com',
+      name: 'Value Creation Consulting',
+      description:
+        'Value Creation Consulting helps small business owners transform their business from a job into a wealth-building asset.',
+    },
+    inLanguage: 'en-US',
+  }}
+>
+  <!-- <MainSection title="Projects" subTitle="What we did" /> -->
+  <h1
+    class="pt-10 lg:pt-14 text-center text-2xl font-bold leading-tight text-neutral-800 dark:text-neutral-200 md:text-4xl"
+  >
+    Projects
+  </h1>
+  <h2
+    class="pt-4 lg:pt-8 text-xl font-bold leading-tight text-neutral-800 dark:text-neutral-200 md:text-2xl"
+  >
+    Acquisition:
+  </h2>
+  <p class="py-4 lg:py-8 text-lg">
+    A former SaaS CEO and founder engaged Value Creation Consulting (VCC) to
+    evaluate whether acquiring a SaaS‑like business was the right next move. The
+    goal was to determine fit, confirm the quality of the underlying economics,
+    and understand how the business would perform under his ownership.
+  </p>
+  <LeftSection
+    title="CLIENT CONTEXT"
+    subTitle="The client had successfully built and exited a SaaS company and wanted to acquire an operating business where his experience in product, subscription economics, and go‑to‑market could be directly applied. He was considering a SaaS‑like business with recurring revenue characteristics but wanted a structured, objective view of its true potential and risks."
+    img={saas}
+    imgAlt="saas"
+  />
+  <RightSection
+    title="CORE QUESTIONS"
+    single
+    imgOne={revGrowth}
+    imgOneAlt="Core questions"
+    subTitle=`The engagement centered on a few practical questions:
+  <ul class='pl-4 list-disc list-outside mt-1 text-pretty text-neutral-700 dark:text-neutral-300'>
+  <li>How reliable and recurring were the target’s revenue and earnings.</li>
+  <li>Whether the competitive landscape and positioning supported the growth story.</li>
+  <li>If the acquisition price and structure were reasonable given the economics and risk.</li>
+  <li>Whether the business could be credibly supported by debt financing.</li>
+  </ul> `
+  />
+  <LeftSection
+    title="VCC’S WORK"
+    subTitle=`Over approximately five months, VCC:
+    <ul class='pl-4 list-disc list-outside mt-1 text-pretty text-neutral-700 dark:text-neutral-300'>
+    <li>Analyzed Quality of Earnings materials to understand normalized earnings and distinguish durable revenue from one‑time or lower‑quality streams.</li>
+    <li>Conducted market and competitor research to identify the most relevant competitors and clarify how the target was positioned within its niche.</li>
+    <li>Assessed valuation and price targets and developed a set of SaaS‑appropriate KPIs and rules of thumb to forecast post‑acquisition performance.</li>
+    <li>Reviewed the purchase agreement, employment agreements, and the business plan to help ensure the opportunity could qualify for lender support.</li>
+    </ul>
+    `
+    img={charts}
+    imgAlt="Analysis"
+  />
+  <RightSection
+    title="OUTCOME"
+    single
+    imgOne={acquisition}
+    imgOneAlt="Outcome"
+    subTitle=`The client proceeded with the acquisition with a clear understanding of the target’s economics, strategic fit, and financing viability. He entered ownership with defined KPIs and a practical forecasting framework that connected directly to his prior SaaS leadership experience, improving his ability to manage the asset and track whether the investment was performing as intended.`
+  />
+</MainLayout>
